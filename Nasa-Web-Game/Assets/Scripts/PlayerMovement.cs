@@ -17,7 +17,10 @@ public class PlayerMovement : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
             canJump = true;
         }
+
         
+
+
 
         
     }
@@ -25,12 +28,15 @@ public class PlayerMovement : MonoBehaviour
     {
         rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
     }
+
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.CompareTag("Ground"))
-        { 
+        if (collision.gameObject.CompareTag("Ground"))
+        {
             canJump = false;
         }
+
+    
     }
 
 }
