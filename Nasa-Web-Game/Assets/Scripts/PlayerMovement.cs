@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float horizontal;
+    private float horizontal;
     private float speed = 8f;
     private float jumpingPower = 8f;
     private bool canJump;
@@ -18,11 +18,6 @@ public class PlayerMovement : MonoBehaviour
             canJump = true;
         }
 
-        
-
-
-
-        
     }
     private void FixedUpdate()
     {
@@ -38,5 +33,4 @@ public class PlayerMovement : MonoBehaviour
 
     
     }
-
 }
