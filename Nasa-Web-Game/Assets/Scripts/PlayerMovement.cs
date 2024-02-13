@@ -6,30 +6,30 @@ public class PlayerMovement : MonoBehaviour
 {
     public float horizontal;
     private float speed = 8f;
-    private float jumpingPower = 16f;
-    [SerializeField] private Rigidbody2D rb;
-    [SerializeField] private Transform groundCheck;
-    [SerializeField] private LayerMask groundLayer;
+    private float jumpingPower = 8f;
+    public Rigidbody2D rb;
+    private bool canJump;
     void Update()
     {
         horizontal = Input.GetAxisRaw("Horizontal");
-        if(Input.GetButtonDown("Jump") && IsGrounded())
+        if(Input.GetButtonDown("Jump") && !canJump)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
+            canJump = true;
         }
-        if(Input.GetButtonUp("Jump") && rb.velocity.y > 0f)
-        {
-            rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
-        }
+
         
     }
     private void FixedUpdate()
     {
         rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
     }
-    private bool IsGrounded()
+    private void OnCollisionEnter2D(Collision2D ground)
     {
-        return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
+        if(ground.gameObject.CompareTag("Ground"))
+        {
+            canJump = false;
+        }
     }
 
 }
