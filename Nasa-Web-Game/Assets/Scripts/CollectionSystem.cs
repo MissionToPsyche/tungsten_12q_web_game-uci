@@ -16,7 +16,7 @@ public class CollectionSystem : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D item)
     {
-        if (item.gameObject.CompareTag("Item1"))
+        if (item.gameObject.CompareTag("Item"))
         {
             counter++;
             Destroy(item.gameObject);

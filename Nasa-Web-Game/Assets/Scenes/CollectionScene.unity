@@ -338,7 +338,7 @@ GameObject:
   - component: {fileID: 289803655}
   m_Layer: 0
   m_Name: Rocket
-  m_TagString: Item1
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -600,7 +600,7 @@ GameObject:
   - component: {fileID: 463570365}
   m_Layer: 0
   m_Name: ItemsToCollect
-  m_TagString: Item1
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -671,7 +671,7 @@ GameObject:
   - component: {fileID: 982971686}
   m_Layer: 0
   m_Name: Wings (3)
-  m_TagString: Item1
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -801,7 +801,7 @@ GameObject:
   - component: {fileID: 1154845456}
   m_Layer: 0
   m_Name: Wings (4)
-  m_TagString: Item1
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1477,7 +1477,7 @@ GameObject:
   - component: {fileID: 1775713428}
   m_Layer: 0
   m_Name: Wings (2)
-  m_TagString: Item1
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1675,7 +1675,7 @@ GameObject:
   - component: {fileID: 1985690112}
   m_Layer: 0
   m_Name: Wings
-  m_TagString: Item1
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1849,7 +1849,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1939,7 +1939,7 @@ GameObject:
   - component: {fileID: 2132655973}
   m_Layer: 0
   m_Name: Wings (1)
-  m_TagString: Item1
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
