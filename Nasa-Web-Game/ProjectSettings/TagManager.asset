@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Ground
   - Item
+  - Jump Buff
+  - Invulnerability Buff
+  - SpeedBuff
   layers:
   - Default
   - TransparentFX
