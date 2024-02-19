@@ -639,7 +639,7 @@ GameObject:
   - component: {fileID: 543669562}
   m_Layer: 0
   m_Name: Speed Buffs
-  m_TagString: SpeedBuff
+  m_TagString: Speed Buff
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

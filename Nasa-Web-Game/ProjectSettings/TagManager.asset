@@ -8,7 +8,7 @@ TagManager:
   - Item
   - Jump Buff
   - Invulnerability Buff
-  - SpeedBuff
+  - Speed Buff
   layers:
   - Default
   - TransparentFX
