@@ -14,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
     //checks to see if user has speed buff
     private bool speedBuff = false;
     private float speedTimer = 10;
+    //checks to see if user has jump buff
     private bool jumpBuff = false;
     private float jumpTimer = 10;
     void Update()
@@ -58,22 +59,22 @@ public class PlayerMovement : MonoBehaviour
         //Movement speed of sprite
         rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
     }
-    private void OnTriggerEnter2D(Collider2D buff)
+    private void OnTriggerEnter2D(Collider2D collider2d)
     {
         //if colliding with speedbuff then it speedbuff = true
-        if(buff.gameObject.CompareTag("Speed Buff"))
+        if(collider2d.gameObject.CompareTag("Speed Buff"))
         {
             speedBuff = true;
             speed = 12f;
 
-            Destroy(buff.gameObject);
+            Destroy(collider2d.gameObject);
         }
-        if (buff.gameObject.CompareTag("Jump Buff"))
+        else if(collider2d.gameObject.CompareTag("Jump Buff"))
         {
             jumpBuff = true;
             jumpingPower = 12f;
 
-            Destroy(buff.gameObject);
+            Destroy(collider2d.gameObject);
         }
     }
  
