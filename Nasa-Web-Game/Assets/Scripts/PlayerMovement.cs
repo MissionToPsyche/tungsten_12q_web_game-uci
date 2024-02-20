@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    
+    //animator
+    public Animator animator;
     public float horizontal;
     private float speed = 8f;
     private float jumpingPower = 8f;
@@ -16,9 +17,14 @@ public class PlayerMovement : MonoBehaviour
     private float speedTimer = 10;
     private bool jumpBuff = false;
     private float jumpTimer = 10;
+    //for flipping sprite when moving left
+    private bool facingRight = true;
+
     void Update()
     {
         horizontal = Input.GetAxisRaw("Horizontal");
+        animator.SetFloat("Speed", Mathf.Abs(horizontal));
+
         //Gets User input and checks to see if the User can Jump
         if(Input.GetButtonDown("Jump") && !canJump)
         {
@@ -51,6 +57,22 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
+        if (horizontal > 0)
+        {
+            gameObject.transform.localScale = new Vector3(1, 1, 1);
+        }
+        if (horizontal < 0)
+        {
+            gameObject.transform.localScale = new Vector3(-1, 1, 1);
+        }
+        if (horizontal < 0 && !facingRight)
+        {
+            flipping();
+        }
+        if (horizontal < 0 && facingRight)
+        {
+            flipping();
+        }
 
     }
     private void FixedUpdate()
@@ -59,6 +81,7 @@ public class PlayerMovement : MonoBehaviour
         rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
     }
     private void OnTriggerEnter2D(Collider2D buff)
+
     {
         //if colliding with speedbuff then it speedbuff = true
         if(buff.gameObject.CompareTag("Speed Buff"))
@@ -85,5 +108,11 @@ public class PlayerMovement : MonoBehaviour
             canJump = false;
         }
     }
-
+    void flipping()
+    {
+        Vector3 scale = gameObject.transform.localScale;
+        scale *= -1;
+        gameObject.transform.localScale = scale;
+        facingRight = !facingRight;
+    }
 }
