@@ -9,6 +9,8 @@ TagManager:
   - Jump Buff
   - Invulnerability Buff
   - Speed Buff
+  - Checkpoints
+
   layers:
   - Default
   - TransparentFX
