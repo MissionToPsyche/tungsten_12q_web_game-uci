@@ -35,12 +35,13 @@ public class respawn : MonoBehaviour
             if (firstCheck == false){
                 checkOrder = collision.gameObject.GetComponent<checkpointOrder>();
                 curCheckpoint = collision.transform;
+                firstCheck = true;
             }
             else{
             
-            if (collision.gameObject.GetComponent<checkpointOrder>().checkpointNum > checkOrder.checkpointNum){
-                curCheckpoint = collision.transform;
-            }
+                if (collision.gameObject.GetComponent<checkpointOrder>().checkpointNum > checkOrder.checkpointNum){
+                    curCheckpoint = collision.transform;
+                }
             }
             collision.GetComponent<Collider2D>().enabled = false;
         }
