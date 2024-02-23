@@ -7,6 +7,10 @@ public class respawn : MonoBehaviour
     private Transform curCheckpoint; //move current checkpoint into this parameter
     private health playerHealth;
 
+    private checkpointOrder checkOrder;
+
+    private bool firstCheck;
+
     
 
     
@@ -27,9 +31,18 @@ public class respawn : MonoBehaviour
     {
         if (collision.transform.tag == "Checkpoints")
         {
-            curCheckpoint = collision.transform;
             playerHealth.CheckpointUnlocked = true;
-            collision.GetComponent<Collider>().enabled = false;
+            if (firstCheck == false){
+                checkOrder = collision.gameObject.GetComponent<checkpointOrder>();
+                curCheckpoint = collision.transform;
+            }
+            else{
+            
+            if (collision.gameObject.GetComponent<checkpointOrder>().checkpointNum > checkOrder.checkpointNum){
+                curCheckpoint = collision.transform;
+            }
+            }
+            collision.GetComponent<Collider2D>().enabled = false;
         }
     }
 
