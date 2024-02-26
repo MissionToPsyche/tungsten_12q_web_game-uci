@@ -80,8 +80,8 @@ public class PlayerMovement : MonoBehaviour
         //Movement speed of sprite
         rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
     }
+    
     private void OnTriggerEnter2D(Collider2D buff)
-
     {
         //if colliding with speedbuff then it speedbuff = true
         if(buff.gameObject.CompareTag("Speed Buff"))
