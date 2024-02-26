@@ -1,0 +1,479 @@
+fileFormatVersion: 2
+guid: 90cb858cc73d3d04fb4c08c270cdda97
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Solar Flare Sprite Sheet_scaled_7x_pngcrushed_0
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 1470
+        width: 250
+        height: 490
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a4f9b84549d63d4d99f879fa2a39f00
+      internalID: 883204302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solar Flare Sprite Sheet_scaled_7x_pngcrushed_1
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 1470
+        width: 250
+        height: 490
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 970d77d98e89aa44b9867dff722467a6
+      internalID: 287754093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solar Flare Sprite Sheet_scaled_7x_pngcrushed_2
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 1470
+        width: 250
+        height: 490
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fa118f40c7376c4390a523c225313cb
+      internalID: 480046355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solar Flare Sprite Sheet_scaled_7x_pngcrushed_3
+      rect:
+        serializedVersion: 2
+        x: 1585
+        y: 1470
+        width: 250
+        height: 490
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aead7b1a269646743a34dd958f78d721
+      internalID: -1658274369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solar Flare Sprite Sheet_scaled_7x_pngcrushed_4
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 980
+        width: 250
+        height: 490
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 905cddaed557a6a4980459ec1ddefb07
+      internalID: 1883522396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solar Flare Sprite Sheet_scaled_7x_pngcrushed_5
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 980
+        width: 250
+        height: 490
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 471d9caf9eec9834bb109932c09082ba
+      internalID: -148617114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solar Flare Sprite Sheet_scaled_7x_pngcrushed_6
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 980
+        width: 250
+        height: 490
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf6df7593a9386c4a853d03de5672858
+      internalID: 1641917040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solar Flare Sprite Sheet_scaled_7x_pngcrushed_7
+      rect:
+        serializedVersion: 2
+        x: 1585
+        y: 980
+        width: 250
+        height: 490
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74118f08e6f326f4c98f38b7f230b5e4
+      internalID: 773676966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solar Flare Sprite Sheet_scaled_7x_pngcrushed_8
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 490
+        width: 250
+        height: 490
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61103869aba88ff499e072d581093d73
+      internalID: 1322535665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solar Flare Sprite Sheet_scaled_7x_pngcrushed_9
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 490
+        width: 250
+        height: 490
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ee83bdb5ad476b40aacf92a84617c8d
+      internalID: 1599205158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solar Flare Sprite Sheet_scaled_7x_pngcrushed_10
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 490
+        width: 250
+        height: 490
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ace1e45859311b14897e666a2741fad0
+      internalID: -1470129499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solar Flare Sprite Sheet_scaled_7x_pngcrushed_11
+      rect:
+        serializedVersion: 2
+        x: 1585
+        y: 490
+        width: 250
+        height: 490
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 381f7298eeec6d845a63882401d724fd
+      internalID: -1927638336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solar Flare Sprite Sheet_scaled_7x_pngcrushed_12
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 0
+        width: 250
+        height: 490
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 304148771b25bd04b9241513b2f9b9d4
+      internalID: -2027695254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solar Flare Sprite Sheet_scaled_7x_pngcrushed_13
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 0
+        width: 250
+        height: 490
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6ed67087afeacb45a36db1ea1d213c5
+      internalID: -800185624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solar Flare Sprite Sheet_scaled_7x_pngcrushed_14
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 0
+        width: 250
+        height: 490
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 124ac5b293e6bec4681e3eb7fe28a1be
+      internalID: 1898076277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solar Flare Sprite Sheet_scaled_7x_pngcrushed_15
+      rect:
+        serializedVersion: 2
+        x: 1585
+        y: 0
+        width: 250
+        height: 490
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a45fda14edfafc346994ed54de37c747
+      internalID: 308054623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Solar Flare Sprite Sheet_scaled_7x_pngcrushed_0: 883204302
+      Solar Flare Sprite Sheet_scaled_7x_pngcrushed_1: 287754093
+      Solar Flare Sprite Sheet_scaled_7x_pngcrushed_10: -1470129499
+      Solar Flare Sprite Sheet_scaled_7x_pngcrushed_11: -1927638336
+      Solar Flare Sprite Sheet_scaled_7x_pngcrushed_12: -2027695254
+      Solar Flare Sprite Sheet_scaled_7x_pngcrushed_13: -800185624
+      Solar Flare Sprite Sheet_scaled_7x_pngcrushed_14: 1898076277
+      Solar Flare Sprite Sheet_scaled_7x_pngcrushed_15: 308054623
+      Solar Flare Sprite Sheet_scaled_7x_pngcrushed_2: 480046355
+      Solar Flare Sprite Sheet_scaled_7x_pngcrushed_3: -1658274369
+      Solar Flare Sprite Sheet_scaled_7x_pngcrushed_4: 1883522396
+      Solar Flare Sprite Sheet_scaled_7x_pngcrushed_5: -148617114
+      Solar Flare Sprite Sheet_scaled_7x_pngcrushed_6: 1641917040
+      Solar Flare Sprite Sheet_scaled_7x_pngcrushed_7: 773676966
+      Solar Flare Sprite Sheet_scaled_7x_pngcrushed_8: 1322535665
+      Solar Flare Sprite Sheet_scaled_7x_pngcrushed_9: 1599205158
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
