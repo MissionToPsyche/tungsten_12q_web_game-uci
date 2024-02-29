@@ -10,7 +10,8 @@ TagManager:
   - Invulnerability Buff
   - Speed Buff
   - Checkpoints
-
+  - Checkpoint
+  - Death
   layers:
   - Default
   - TransparentFX
