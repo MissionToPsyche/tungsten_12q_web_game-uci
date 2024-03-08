@@ -12,11 +12,10 @@ public class Parallax : MonoBehaviour
     {
         start = transform.position.x;
         length = GetComponent<SpriteRenderer>().bounds.size.x;
-
     }
 
     // Update is called once per frame
-    void fixedUpdate()
+    void FixedUpdate()
     {
         float distance = (camera.transform.position.x * parallaxEffect);
         transform.position = new Vector3(start + distance, transform.position.y, transform.position.z);
