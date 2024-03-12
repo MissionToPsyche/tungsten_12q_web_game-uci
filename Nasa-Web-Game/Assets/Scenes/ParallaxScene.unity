@@ -133,9 +133,10 @@ GameObject:
   m_Component:
   - component: {fileID: 15260929}
   - component: {fileID: 15260930}
+  - component: {fileID: 15260932}
   m_Layer: 0
   m_Name: Hexagon Flat-Top
-  m_TagString: Untagged
+  m_TagString: Level Complete
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -207,6 +208,51 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &15260932
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 15260928}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 0.8828125}
+    newSize: {x: 1, y: 0.8828125}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 0.8828125}
+  m_EdgeRadius: 0
 --- !u!1 &128998992
 GameObject:
   m_ObjectHideFlags: 0
@@ -3545,6 +3591,7 @@ GameObject:
   - component: {fileID: 1167324778}
   - component: {fileID: 1167324779}
   - component: {fileID: 1167324780}
+  - component: {fileID: 1167324781}
   m_Layer: 5
   m_Name: LevelCompletedCanvas
   m_TagString: Untagged
@@ -3602,6 +3649,18 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 1
   m_TargetDisplay: 0
+--- !u!114 &1167324781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1167324774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ad2048297bdcdf46bca433bc891ff05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1187183042
 GameObject:
   m_ObjectHideFlags: 0
@@ -5208,6 +5267,7 @@ GameObject:
   - component: {fileID: 1588085357}
   - component: {fileID: 1588085359}
   - component: {fileID: 1588085360}
+  - component: {fileID: 1588085361}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -5386,6 +5446,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collectedAmount: {fileID: 2015815814}
+  counter: 0
 --- !u!222 &1588085355
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5443,6 +5504,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f67222c3aa721f54d87ce82944a263d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1588085361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1588085348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b939534e22663974a98efce8b5a9dd5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  totalItems: 3
+  collectionSystem: {fileID: 1588085354}
+  LevelCompleteScreen: {fileID: 1167324781}
 --- !u!1 &1593593656
 GameObject:
   m_ObjectHideFlags: 0
