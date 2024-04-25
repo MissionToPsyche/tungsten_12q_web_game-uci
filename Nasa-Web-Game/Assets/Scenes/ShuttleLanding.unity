@@ -133,7 +133,6 @@ GameObject:
   m_Component:
   - component: {fileID: 117437662}
   - component: {fileID: 117437664}
-  - component: {fileID: 117437663}
   m_Layer: 0
   m_Name: rti-space-bg
   m_TagString: Untagged
@@ -156,20 +155,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 907892319}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &117437663
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 117437661}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8b4300f8ee23c04bbb7e31c11fcbd72, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  camera: {fileID: 0}
-  parallaxEffect: 1
 --- !u!212 &117437664
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -232,7 +217,6 @@ GameObject:
   m_Component:
   - component: {fileID: 143697642}
   - component: {fileID: 143697644}
-  - component: {fileID: 143697643}
   m_Layer: 0
   m_Name: rti-space-bg (12)
   m_TagString: Untagged
@@ -255,20 +239,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 907892319}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &143697643
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 143697641}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8b4300f8ee23c04bbb7e31c11fcbd72, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  camera: {fileID: 0}
-  parallaxEffect: 1
 --- !u!212 &143697644
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -331,7 +301,6 @@ GameObject:
   m_Component:
   - component: {fileID: 210337477}
   - component: {fileID: 210337479}
-  - component: {fileID: 210337478}
   m_Layer: 0
   m_Name: rti-space-bg (3)
   m_TagString: Untagged
@@ -354,20 +323,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 907892319}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &210337478
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 210337476}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8b4300f8ee23c04bbb7e31c11fcbd72, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  camera: {fileID: 0}
-  parallaxEffect: 1
 --- !u!212 &210337479
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -560,7 +515,6 @@ GameObject:
   m_Component:
   - component: {fileID: 457154239}
   - component: {fileID: 457154241}
-  - component: {fileID: 457154240}
   m_Layer: 0
   m_Name: rti-space-bg (5)
   m_TagString: Untagged
@@ -583,20 +537,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 907892319}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &457154240
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 457154238}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8b4300f8ee23c04bbb7e31c11fcbd72, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  camera: {fileID: 0}
-  parallaxEffect: 1
 --- !u!212 &457154241
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -863,7 +803,6 @@ GameObject:
   m_Component:
   - component: {fileID: 651157824}
   - component: {fileID: 651157826}
-  - component: {fileID: 651157825}
   m_Layer: 0
   m_Name: rti-space-bg (11)
   m_TagString: Untagged
@@ -886,20 +825,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 907892319}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &651157825
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 651157823}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8b4300f8ee23c04bbb7e31c11fcbd72, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  camera: {fileID: 0}
-  parallaxEffect: 1
 --- !u!212 &651157826
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1266,7 +1191,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1221175517}
   - component: {fileID: 1221175519}
-  - component: {fileID: 1221175518}
   m_Layer: 0
   m_Name: rti-space-bg (6)
   m_TagString: Untagged
@@ -1289,20 +1213,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 907892319}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1221175518
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1221175516}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8b4300f8ee23c04bbb7e31c11fcbd72, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  camera: {fileID: 0}
-  parallaxEffect: 1
 --- !u!212 &1221175519
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1453,7 +1363,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1317529116}
   - component: {fileID: 1317529118}
-  - component: {fileID: 1317529117}
   m_Layer: 0
   m_Name: rti-space-bg (2)
   m_TagString: Untagged
@@ -1476,20 +1385,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 907892319}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1317529117
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1317529115}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8b4300f8ee23c04bbb7e31c11fcbd72, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  camera: {fileID: 0}
-  parallaxEffect: 1
 --- !u!212 &1317529118
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1552,7 +1447,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1405557343}
   - component: {fileID: 1405557345}
-  - component: {fileID: 1405557344}
   m_Layer: 0
   m_Name: rti-space-bg (9)
   m_TagString: Untagged
@@ -1575,20 +1469,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 907892319}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1405557344
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1405557342}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8b4300f8ee23c04bbb7e31c11fcbd72, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  camera: {fileID: 0}
-  parallaxEffect: 1
 --- !u!212 &1405557345
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1766,7 +1646,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1853773365}
   - component: {fileID: 1853773367}
-  - component: {fileID: 1853773366}
   m_Layer: 0
   m_Name: rti-space-bg (8)
   m_TagString: Untagged
@@ -1789,20 +1668,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 907892319}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1853773366
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1853773364}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8b4300f8ee23c04bbb7e31c11fcbd72, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  camera: {fileID: 0}
-  parallaxEffect: 1
 --- !u!212 &1853773367
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1865,7 +1730,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1866101187}
   - component: {fileID: 1866101189}
-  - component: {fileID: 1866101188}
   m_Layer: 0
   m_Name: rti-space-bg (1)
   m_TagString: Untagged
@@ -1888,20 +1752,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 907892319}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1866101188
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1866101186}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8b4300f8ee23c04bbb7e31c11fcbd72, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  camera: {fileID: 0}
-  parallaxEffect: 1
 --- !u!212 &1866101189
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1964,7 +1814,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1898882676}
   - component: {fileID: 1898882678}
-  - component: {fileID: 1898882677}
   m_Layer: 0
   m_Name: rti-space-bg (10)
   m_TagString: Untagged
@@ -1987,20 +1836,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 907892319}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1898882677
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1898882675}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8b4300f8ee23c04bbb7e31c11fcbd72, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  camera: {fileID: 0}
-  parallaxEffect: 1
 --- !u!212 &1898882678
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2063,7 +1898,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1992592622}
   - component: {fileID: 1992592624}
-  - component: {fileID: 1992592623}
   m_Layer: 0
   m_Name: rti-space-bg (7)
   m_TagString: Untagged
@@ -2086,20 +1920,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 907892319}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1992592623
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1992592621}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8b4300f8ee23c04bbb7e31c11fcbd72, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  camera: {fileID: 0}
-  parallaxEffect: 1
 --- !u!212 &1992592624
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2162,7 +1982,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2101108953}
   - component: {fileID: 2101108955}
-  - component: {fileID: 2101108954}
   m_Layer: 0
   m_Name: rti-space-bg (4)
   m_TagString: Untagged
@@ -2185,20 +2004,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 907892319}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2101108954
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2101108952}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8b4300f8ee23c04bbb7e31c11fcbd72, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  camera: {fileID: 0}
-  parallaxEffect: 1
 --- !u!212 &2101108955
 SpriteRenderer:
   m_ObjectHideFlags: 0
