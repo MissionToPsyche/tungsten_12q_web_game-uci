@@ -9,8 +9,8 @@ EditorBuildSettings:
     path: Assets/Scenes/StartMenu.unity
     guid: 40232d6ac063565499389d8a4eaa9c36
   - enabled: 1
-    path: Assets/Scenes/ShuttleLanding.unity
-    guid: c7003331061ca4d9e9f64db2021de2e1
+    path: Assets/Scenes/UpdateFloor1.unity
+    guid: f4c045506e301b546a74899e54271d9a
   - enabled: 1
     path: Assets/Scenes/ParallaxScene.unity
     guid: 71e58a818709a6c48a7f7951e6933dbd
