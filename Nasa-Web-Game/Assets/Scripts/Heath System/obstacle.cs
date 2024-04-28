@@ -10,7 +10,6 @@ public class obstacle : MonoBehaviour
         if (unit.tag == "Player") {
 
             unit.GetComponent<health>().takeDamage(dmg);
-            //StartCoroutine("invulnerability");
         }
     }
     IEnumerable invulnerability()
@@ -19,6 +18,7 @@ public class obstacle : MonoBehaviour
         yield return new WaitForSeconds(2f);
         Physics2D.IgnoreLayerCollision(2, 3, false);
     }
+
 
 
 

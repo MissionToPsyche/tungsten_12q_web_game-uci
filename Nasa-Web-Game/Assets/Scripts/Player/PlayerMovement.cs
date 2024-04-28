@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
     private float speed = 8f;
     private float jumpingPower = 8f;
     public Rigidbody2D rb;
+    public SpriteRenderer sprite;
     //checks to see if user can jump
     private bool canJump;
     //for flipping sprite when moving left
@@ -51,13 +52,29 @@ public class PlayerMovement : MonoBehaviour
         rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
     }
  
-    private void OnCollisionEnter2D(Collision2D ground)
+    private void OnCollisionEnter2D(Collision2D collision)
     {   
         //checks to see if sprite is on the tag "Ground"
-        if(ground.gameObject.CompareTag("Ground"))
+        if(collision.gameObject.CompareTag("Ground"))
         {
             canJump = false;
         }
+        
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Obstacles"))
+        {
+            StartCoroutine("DamageTaken");
+        }
+        
+      
+    }
+    IEnumerable DamageTaken()
+    {
+        sprite.color = Color.red;
+        yield return new WaitForSeconds(1f);
+        sprite.color = Color.white;
     }
     void flipping()
     {
