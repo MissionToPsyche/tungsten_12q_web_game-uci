@@ -8,7 +8,7 @@ using System;
 public class CollectionSystem : MonoBehaviour
 {
     public TMP_Text collectedAmount;
-    private int counter;
+    public int counter;
     // Update is called once per frame
     void Update()
     {
