@@ -1,9 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FMODUnity;
+using FMOD.Studio;
 
 public class PlayerMovement : MonoBehaviour
 {
+
+
     //animator
     public Animator animator;
     public float horizontal;
@@ -20,6 +24,27 @@ public class PlayerMovement : MonoBehaviour
     //for flipping sprite when moving left
     private bool facingRight = true;
 
+    private bool charMove = false;
+
+
+    private EventInstance playerMoveSound;
+
+    private void Start(){
+        playerMoveSound = AudioManager.Instance.CreateEventInstance(FMODevents.Instance.moveSound);
+    }
+
+    private void UpdateSound(){
+        if (rb.velocity.x !=0){
+            PLAYBACK_STATE playbackState;
+            playerMoveSound.getPlaybackState(out playbackState);
+            if (playbackState.Equals(PLAYBACK_STATE.STOPPED)){
+                playerMoveSound.start();
+            }
+        }
+        else{
+            playerMoveSound.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        }
+    }
     void Update()
     {
         horizontal = Input.GetAxisRaw("Horizontal");
@@ -29,7 +54,9 @@ public class PlayerMovement : MonoBehaviour
         if(Input.GetButtonDown("Jump") && !canJump)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
+            AudioManager.Instance.PlayOneShot(FMODevents.Instance.jumpSound,this.transform.position);
             canJump = true;
+            
         }
         //checks speed buffs
         if(speedBuff)
@@ -60,10 +87,19 @@ public class PlayerMovement : MonoBehaviour
         if (horizontal > 0)
         {
             gameObject.transform.localScale = new Vector3(1, 1, 1);
+            if (charMove == false){
+                
+                charMove = true;
+            }
+
         }
         if (horizontal < 0)
         {
             gameObject.transform.localScale = new Vector3(-1, 1, 1);
+            if (charMove == false){
+                
+                charMove = true;
+            }
         }
         if (horizontal < 0 && !facingRight)
         {
@@ -73,12 +109,18 @@ public class PlayerMovement : MonoBehaviour
         {
             flipping();
         }
+        if (horizontal == 0 && charMove == true){
+            
+            charMove = false;
+        }
 
     }
     private void FixedUpdate()
     {
         //Movement speed of sprite
         rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
+
+        UpdateSound();
     }
     private void OnTriggerEnter2D(Collider2D buff)
 

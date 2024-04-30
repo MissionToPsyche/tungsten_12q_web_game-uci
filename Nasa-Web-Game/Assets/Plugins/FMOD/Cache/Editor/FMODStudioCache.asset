@@ -1,0 +1,185 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6579160553649132065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/LVL1.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Scripts/Audio/FMODBANKS/Desktop/LVL1.bank
+  Name: LVL1
+  StudioPath: bank:/LVL1
+  lastModified: 638500018565366030
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-2731755227091981912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/SFX.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Scripts/Audio/FMODBANKS/Desktop/SFX.bank
+  Name: SFX
+  StudioPath: bank:/SFX
+  lastModified: 638500120212735125
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-1326884917388729576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Scripts/Audio/FMODBANKS/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638500120208762155
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-134775396519099294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Scripts/Audio/FMODBANKS/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638500120208782007
+  FileSizes:
+  - Name: 
+    Value: 988
+  Exists: 1
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: -134775396519099294}
+  - {fileID: -6579160553649132065}
+  - {fileID: -1326884917388729576}
+  - {fileID: -2731755227091981912}
+  EditorEvents:
+  - {fileID: 6677099218808536527}
+  - {fileID: 9166568122248988152}
+  - {fileID: 2640302834670188555}
+  EditorParameters: []
+  MasterBanks:
+  - {fileID: -1326884917388729576}
+  StringsBanks:
+  - {fileID: -134775396519099294}
+  cacheTime: 638500120212735125
+  cacheVersion: 131616
+--- !u!114 &2640302834670188555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/MoveSound
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/MoveSound
+  Guid:
+    Data1: 777414283
+    Data2: 1099673563
+    Data3: 530137006
+    Data4: 555848981
+  Banks:
+  - {fileID: -2731755227091981912}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 17811
+--- !u!114 &6677099218808536527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/BGM1
+  m_EditorClassIdentifier: 
+  Path: event:/Music/BGM1
+  Guid:
+    Data1: 686193308
+    Data2: 1102732882
+    Data3: -1849885020
+    Data4: -221141540
+  Banks:
+  - {fileID: -6579160553649132065}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 232463
+--- !u!114 &9166568122248988152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Jump
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Jump
+  Guid:
+    Data1: -822246173
+    Data2: 1116323602
+    Data3: 460118704
+    Data4: -1988316939
+  Banks:
+  - {fileID: -2731755227091981912}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
