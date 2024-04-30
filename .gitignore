@@ -70,3 +70,5 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 [Aa]ssets/[Ss]treamingAssets/aa.meta
 [Aa]ssets/[Ss]treamingAssets/aa/*
+Nasa-Web-Game/fmod_editor.log
+Nasa-Web-Game/Assets/Plugins/FMOD/platforms/win/lib/x86_64/fmodstudioL.dll
