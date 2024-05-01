@@ -9,6 +9,7 @@ public class obstacle : MonoBehaviour
     public Animator animator;
     private void OnTriggerEnter2D(Collider2D unit){
         if (unit.tag == "Player") {
+            
             playerMovement.KBCounter = playerMovement.KBTotalTime;
             if(unit.transform.position.x <= transform.position.x)
             {
@@ -18,21 +19,20 @@ public class obstacle : MonoBehaviour
             {
                 playerMovement.KBfromRight = false;
             }
+            
             unit.GetComponent<health>().takeDamage(dmg);
             StartCoroutine("TakeDamage");
+
         }
     }
-    IEnumerable invulnerability()
-    {
-        Physics2D.IgnoreLayerCollision(2, 3, true);
-        yield return new WaitForSeconds(2f);
-        Physics2D.IgnoreLayerCollision(2, 3, false);
-    }
-    IEnumerable TakeDamage()
+    IEnumerator TakeDamage()
     {
         animator.SetBool("isHit", true);
+        dmg = 0;
         yield return new WaitForSeconds(2f);
         animator.SetBool("isHit", false);
+        dmg = 1;
+
     }
 
 
