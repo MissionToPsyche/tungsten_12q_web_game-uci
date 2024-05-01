@@ -7,22 +7,27 @@ public class obstacle : MonoBehaviour
     [SerializeField] private float dmg;
     public PlayerMovement playerMovement;
     public Animator animator;
+    private Coroutine routine;
     private void OnTriggerEnter2D(Collider2D unit){
         if (unit.tag == "Player") {
-            
-            playerMovement.KBCounter = playerMovement.KBTotalTime;
-            if(unit.transform.position.x <= transform.position.x)
-            {
-                playerMovement.KBfromRight = true;
-            }
-            if(unit.transform.position.x > transform.position.x)
-            {
-                playerMovement.KBfromRight = false;
-            }
-            
-            unit.GetComponent<health>().takeDamage(dmg);
-            StartCoroutine("TakeDamage");
 
+            if (routine == null)
+            {
+
+
+                playerMovement.KBCounter = playerMovement.KBTotalTime;
+                if (unit.transform.position.x <= transform.position.x)
+                {
+                    playerMovement.KBfromRight = true;
+                }
+                if (unit.transform.position.x > transform.position.x)
+                {
+                    playerMovement.KBfromRight = false;
+                }
+
+                unit.GetComponent<health>().takeDamage(dmg);
+                routine = StartCoroutine("TakeDamage");
+            }
         }
     }
     IEnumerator TakeDamage()
@@ -32,6 +37,7 @@ public class obstacle : MonoBehaviour
         yield return new WaitForSeconds(2f);
         animator.SetBool("isHit", false);
         dmg = 1;
+        routine = null;
 
     }
 
