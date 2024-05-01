@@ -565,6 +565,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dmg: 1
+  playerMovement: {fileID: 1588085349}
 --- !u!61 &169286314
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2012,6 +2013,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dmg: 1
+  playerMovement: {fileID: 1588085349}
 --- !u!61 &415753730
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3348,6 +3350,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dmg: 1
+  playerMovement: {fileID: 1588085349}
 --- !u!61 &487215125
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5611,6 +5614,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dmg: 1
+  playerMovement: {fileID: 1588085349}
 --- !u!61 &804959595
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6465,7 +6469,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -9.6, y: 3.38}
+  m_AnchoredPosition: {x: -2.54, y: 3.66}
   m_SizeDelta: {x: 2, y: 4.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &986676450
@@ -6481,6 +6485,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dmg: 1
+  playerMovement: {fileID: 1588085349}
 --- !u!61 &986676451
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6796,6 +6801,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dmg: 1
+  playerMovement: {fileID: 1588085349}
 --- !u!61 &1020998313
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6999,6 +7005,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dmg: 1
+  playerMovement: {fileID: 1588085349}
 --- !u!61 &1040847116
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7169,6 +7176,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dmg: 1
+  playerMovement: {fileID: 1588085349}
 --- !u!61 &1049484959
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7530,6 +7538,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dmg: 3
+  playerMovement: {fileID: 0}
 --- !u!1 &1095070387
 GameObject:
   m_ObjectHideFlags: 0
@@ -7755,6 +7764,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dmg: 1
+  playerMovement: {fileID: 1588085349}
 --- !u!61 &1138014187
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8725,6 +8735,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dmg: 1
+  playerMovement: {fileID: 1588085349}
 --- !u!61 &1264811655
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9941,6 +9952,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dmg: 1
+  playerMovement: {fileID: 1588085349}
 --- !u!61 &1518843188
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10354,6 +10366,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dmg: 1
+  playerMovement: {fileID: 1588085349}
 --- !u!61 &1559363926
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10514,6 +10527,10 @@ MonoBehaviour:
   horizontal: 0
   rb: {fileID: 1588085350}
   sprite: {fileID: 1588085351}
+  KBForce: 3
+  KBCounter: 0
+  KBTotalTime: 0.5
+  KBfromRight: 0
 --- !u!50 &1588085350
 Rigidbody2D:
   serializedVersion: 4
@@ -11123,6 +11140,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dmg: 1
+  playerMovement: {fileID: 1588085349}
 --- !u!61 &1733355699
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12009,6 +12027,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dmg: 1
+  playerMovement: {fileID: 1588085349}
 --- !u!61 &1982545338
 BoxCollider2D:
   m_ObjectHideFlags: 0

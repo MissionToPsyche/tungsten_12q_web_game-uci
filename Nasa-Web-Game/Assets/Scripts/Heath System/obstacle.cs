@@ -5,10 +5,18 @@ using UnityEngine;
 public class obstacle : MonoBehaviour
 {
     [SerializeField] private float dmg;
-
+    public PlayerMovement playerMovement;
     private void OnTriggerEnter2D(Collider2D unit){
         if (unit.tag == "Player") {
-
+            playerMovement.KBCounter = playerMovement.KBTotalTime;
+            if(unit.transform.position.x <= transform.position.x)
+            {
+                playerMovement.KBfromRight = true;
+            }
+            if(unit.transform.position.x > transform.position.x)
+            {
+                playerMovement.KBfromRight = false;
+            }
             unit.GetComponent<health>().takeDamage(dmg);
         }
     }

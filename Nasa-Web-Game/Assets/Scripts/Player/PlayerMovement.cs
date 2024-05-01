@@ -16,11 +16,18 @@ public class PlayerMovement : MonoBehaviour
     //for flipping sprite when moving left
     private bool facingRight = true;
 
+    public float KBForce;
+    public float KBCounter;
+    public float KBTotalTime;
+
+    public bool KBfromRight;
+
     void Update()
     {
         horizontal = Input.GetAxisRaw("Horizontal");
         animator.SetFloat("Speed", Mathf.Abs(horizontal));
 
+        
         //Gets User input and checks to see if the User can Jump
         if(Input.GetButtonDown("Jump") && !canJump)
         {
@@ -48,8 +55,24 @@ public class PlayerMovement : MonoBehaviour
     }
     private void FixedUpdate()
     {
+        if (KBCounter <= 0)
+        {
+            rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
+        }
+        else
+        {
+            if (KBfromRight == true)
+            {
+                rb.velocity = new Vector2(-KBForce, KBForce);
+            }
+            if (KBfromRight == false)
+            {
+                rb.velocity = new Vector2(KBForce, KBForce);
+            }
+            KBCounter -= Time.deltaTime;
+        }
         //Movement speed of sprite
-        rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
+        
     }
  
     private void OnCollisionEnter2D(Collision2D collision)
