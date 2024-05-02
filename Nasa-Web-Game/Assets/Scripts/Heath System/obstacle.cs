@@ -5,20 +5,42 @@ using UnityEngine;
 public class obstacle : MonoBehaviour
 {
     [SerializeField] private float dmg;
-
+    public PlayerMovement playerMovement;
+    public Animator animator;
+    private Coroutine routine;
     private void OnTriggerEnter2D(Collider2D unit){
         if (unit.tag == "Player") {
 
-            unit.GetComponent<health>().takeDamage(dmg);
-            //StartCoroutine("invulnerability");
+            if (routine == null)
+            {
+
+
+                playerMovement.KBCounter = playerMovement.KBTotalTime;
+                if (unit.transform.position.x <= transform.position.x)
+                {
+                    playerMovement.KBfromRight = true;
+                }
+                if (unit.transform.position.x > transform.position.x)
+                {
+                    playerMovement.KBfromRight = false;
+                }
+
+                unit.GetComponent<health>().takeDamage(dmg);
+                routine = StartCoroutine("TakeDamage");
+            }
         }
     }
-    IEnumerable invulnerability()
+    IEnumerator TakeDamage()
     {
-        Physics2D.IgnoreLayerCollision(2, 3, true);
+        animator.SetBool("isHit", true);
+        dmg = 0;
         yield return new WaitForSeconds(2f);
-        Physics2D.IgnoreLayerCollision(2, 3, false);
+        animator.SetBool("isHit", false);
+        dmg = 1;
+        routine = null;
+
     }
+
 
 
 

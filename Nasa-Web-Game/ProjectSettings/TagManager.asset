@@ -13,6 +13,7 @@ TagManager:
   - Checkpoint
   - Death
   - Level Complete
+  - Obstacles
   layers:
   - Default
   - TransparentFX
