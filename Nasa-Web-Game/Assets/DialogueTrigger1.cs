@@ -80,7 +80,10 @@ public class DialogueTrigger1 : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerIsClose = true;
+            dialoguePanel.SetActive(true);
+            StartCoroutine(Typing());
         }
+
     }
     private void OnTriggerExit2D(Collider2D other)
     {
