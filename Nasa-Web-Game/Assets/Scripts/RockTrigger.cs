@@ -20,7 +20,7 @@ public class RockTrigger : MonoBehaviour
     {
         if(collision.CompareTag("Player"))
         {
-            Rock.GetComponent<Rigidbody2D>().gravityScale = 10;
+            Rock.GetComponent<Rigidbody2D>().gravityScale = 5;
         }
     }
 }
