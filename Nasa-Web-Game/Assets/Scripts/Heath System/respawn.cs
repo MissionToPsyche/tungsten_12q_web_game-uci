@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class respawn : MonoBehaviour
-{
+{   
+    public Sprite sprite;
     private Transform curCheckpoint; //move current checkpoint into this parameter
     private health playerHealth;
-
+    
     private checkpointOrder checkOrder;
 
     private bool firstCheck;
@@ -34,6 +35,7 @@ public class respawn : MonoBehaviour
             playerHealth.CheckpointUnlocked = true;
             if (firstCheck == false){
                 checkOrder = collision.gameObject.GetComponent<checkpointOrder>();
+                collision.gameObject.GetComponent<SpriteRenderer>().sprite = sprite; 
                 curCheckpoint = collision.transform;
                 firstCheck = true;
             }
