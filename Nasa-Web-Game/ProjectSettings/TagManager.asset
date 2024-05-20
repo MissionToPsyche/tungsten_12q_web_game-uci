@@ -13,6 +13,8 @@ TagManager:
   - Checkpoint
   - Death
   - Level Complete
+  - Obstacles
+  - Rolling Rock
   layers:
   - Default
   - TransparentFX

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -14,10 +15,19 @@ public class PlayerMovement : MonoBehaviour
     private float speed = 8f;
     private float jumpingPower = 8f;
     public Rigidbody2D rb;
+    public SpriteRenderer sprite;
     //checks to see if user can jump
     private bool canJump;
     //for flipping sprite when moving left
     private bool facingRight = true;
+
+    public float KBForce;
+    public float KBCounter;
+    public float KBTotalTime;
+
+    public bool KBfromRight;
+
+
 
     private bool charMove = false;
 
@@ -44,7 +54,8 @@ public class PlayerMovement : MonoBehaviour
     {
         horizontal = Input.GetAxisRaw("Horizontal");
         animator.SetFloat("Speed", Mathf.Abs(horizontal));
-
+        
+        
         //Gets User input and checks to see if the User can Jump
         if(Input.GetButtonDown("Jump") && !canJump)
         {
@@ -87,20 +98,41 @@ public class PlayerMovement : MonoBehaviour
     }
     private void FixedUpdate()
     {
+        if (KBCounter <= 0)
+        {
+            rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
+        }
+        else
+        {
+            if (KBfromRight == true)
+            {
+                rb.velocity = new Vector2(-KBForce, KBForce);
+            }
+            if (KBfromRight == false)
+            {
+                rb.velocity = new Vector2(KBForce, KBForce);
+            }
+            KBCounter -= Time.deltaTime;
+        }
         //Movement speed of sprite
-        rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
+        
+    }
+
+    private Collider2D getComponent<T>()
+    {
+        throw new NotImplementedException();
 
         UpdateSound();
     }
- 
-    private void OnCollisionEnter2D(Collision2D ground)
-    {   
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
         //checks to see if sprite is on the tag "Ground"
-        if(ground.gameObject.CompareTag("Ground"))
+        if (collision.gameObject.CompareTag("Ground"))
         {
             canJump = false;
         }
     }
+    
     void flipping()
     {
         Vector3 scale = gameObject.transform.localScale;
