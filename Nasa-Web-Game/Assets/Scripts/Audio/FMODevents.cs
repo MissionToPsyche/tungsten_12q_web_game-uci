@@ -14,7 +14,13 @@ public class FMODevents : MonoBehaviour
     [field: SerializeField] public EventReference jumpSound {get; private set;}
 
     [field: SerializeField] public EventReference moveSound {get; private set;}
+
+    [field: Header("ObjectSFX")] 
+
+    [field: SerializeField] public EventReference collectSFX {get; private set;}
     public static FMODevents Instance {get; private set;}
+
+    
     void Awake()
     {
         if (Instance != null)

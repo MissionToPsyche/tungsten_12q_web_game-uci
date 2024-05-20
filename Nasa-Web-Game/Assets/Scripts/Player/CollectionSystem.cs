@@ -19,6 +19,7 @@ public class CollectionSystem : MonoBehaviour
         if (item.gameObject.CompareTag("Item"))
         {
             counter++;
+            AudioManager.Instance.PlayOneShot(FMODevents.Instance.collectSFX,this.transform.position);
             Destroy(item.gameObject);
         }
     }
