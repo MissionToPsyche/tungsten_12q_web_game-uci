@@ -19,7 +19,7 @@ public class obstacle : MonoBehaviour
                 if (CompareTag("Rolling Rock"))
                 {
                     //if the velocity is high, then it will cause the player damage   
-                    if(GetComponent<Rigidbody2D>().velocity.y < -2)
+                    if(GetComponent<Rigidbody2D>().velocity.y < -1 || GetComponent<Rigidbody2D>().velocity.x < -1)
                     { 
                         playerMovement.KBCounter = playerMovement.KBTotalTime;
                         if (unit.transform.position.x <= transform.position.x)
