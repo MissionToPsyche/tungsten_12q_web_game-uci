@@ -332,7 +332,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 0.8828125}
+  m_Size: {x: 4, y: 4}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -375,7 +375,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 4, y: 4}
-    newSize: {x: 1, y: 0.8828125}
+    newSize: {x: 4, y: 4}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -8178,9 +8178,9 @@ Transform:
   - {fileID: 1138014185}
   - {fileID: 18750464}
   - {fileID: 1075246072}
-  - {fileID: 1331733675}
-  - {fileID: 1091171034}
-  - {fileID: 1780588292}
+  - {fileID: 1768944559}
+  - {fileID: 2081089424}
+  - {fileID: 1059832274}
   - {fileID: 1335651019}
   - {fileID: 1376647915}
   m_Father: {fileID: 0}
@@ -8546,6 +8546,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camera: {fileID: 172694539}
   parallaxEffect: 0.6
+--- !u!4 &1059832274 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5293468176327178092, guid: d61f2c15496c3ca4ab8e9c0d025bf67f, type: 3}
+  m_PrefabInstance: {fileID: 1780588291}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1075246069
 GameObject:
   m_ObjectHideFlags: 0
@@ -8906,11 +8911,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 106638151}
   m_SourcePrefab: {fileID: 100100000, guid: d61f2c15496c3ca4ab8e9c0d025bf67f, type: 3}
---- !u!4 &1091171034 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5293468176327178092, guid: d61f2c15496c3ca4ab8e9c0d025bf67f, type: 3}
-  m_PrefabInstance: {fileID: 1091171033}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1095070387
 GameObject:
   m_ObjectHideFlags: 0
@@ -9246,8 +9246,8 @@ Transform:
   m_GameObject: {fileID: 1125956593}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 57.9, y: -0.5, z: -0.0635252}
-  m_LocalScale: {x: 2.45078, y: 16.914225, z: 1}
+  m_LocalPosition: {x: 57, y: 5.8271, z: -0.0635252}
+  m_LocalScale: {x: 2.45078, y: 11.874197, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 951403017}
@@ -10152,11 +10152,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1247128517}
   m_CullTransparentMesh: 1
---- !u!4 &1331733675 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5293468176327178092, guid: d61f2c15496c3ca4ab8e9c0d025bf67f, type: 3}
-  m_PrefabInstance: {fileID: 1894123218}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1335651018
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10233,6 +10228,10 @@ PrefabInstance:
       propertyPath: playerMovement
       value: 
       objectReference: {fileID: 1588085349}
+    - target: {fileID: 8872790621150303216, guid: 5d60ef81b19227142a5eb3cee4af8493, type: 3}
+      propertyPath: m_Radius
+      value: 1.27
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12175,7 +12174,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f67222c3aa721f54d87ce82944a263d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 7d9c1f892a01b7746bc158b745d1d6ce, type: 3}
+  sprite: {fileID: 0}
 --- !u!114 &1588085361
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13182,6 +13181,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!4 &1768944559 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5293468176327178092, guid: d61f2c15496c3ca4ab8e9c0d025bf67f, type: 3}
+  m_PrefabInstance: {fileID: 1894123218}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1771734156
 GameObject:
   m_ObjectHideFlags: 0
@@ -13392,11 +13396,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1780588294}
   m_SourcePrefab: {fileID: 100100000, guid: d61f2c15496c3ca4ab8e9c0d025bf67f, type: 3}
---- !u!4 &1780588292 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5293468176327178092, guid: d61f2c15496c3ca4ab8e9c0d025bf67f, type: 3}
-  m_PrefabInstance: {fileID: 1780588291}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1780588293 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 281797390340909726, guid: d61f2c15496c3ca4ab8e9c0d025bf67f, type: 3}
@@ -15821,6 +15820,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!4 &2081089424 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5293468176327178092, guid: d61f2c15496c3ca4ab8e9c0d025bf67f, type: 3}
+  m_PrefabInstance: {fileID: 1091171033}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2111916362
 GameObject:
   m_ObjectHideFlags: 0

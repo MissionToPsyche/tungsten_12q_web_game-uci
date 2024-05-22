@@ -8,13 +8,6 @@ public class obstacle : MonoBehaviour
     public PlayerMovement playerMovement;
     public Animator animator;
     private Coroutine routine;
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            Physics2D.IgnoreCollision(collision.collider, GetComponent<Collider2D>());
-        }
-    }
     private void OnTriggerEnter2D(Collider2D unit)
     {
         if (unit.tag == "Player")
@@ -23,19 +16,41 @@ public class obstacle : MonoBehaviour
             if (routine == null)
             {
 
-
-                playerMovement.KBCounter = playerMovement.KBTotalTime;
-                if (unit.transform.position.x <= transform.position.x)
+                if (CompareTag("Rolling Rock"))
                 {
-                    playerMovement.KBfromRight = true;
-                }
-                if (unit.transform.position.x > transform.position.x)
-                {
-                    playerMovement.KBfromRight = false;
-                }
+                    //if the velocity is high, then it will cause the player damage   
+                    if(GetComponent<Rigidbody2D>().velocity.y < -2)
+                    { 
+                        playerMovement.KBCounter = playerMovement.KBTotalTime;
+                        if (unit.transform.position.x <= transform.position.x)
+                        {
+                            playerMovement.KBfromRight = true;
+                        }
+                        if (unit.transform.position.x > transform.position.x)
+                        {
+                            playerMovement.KBfromRight = false;
+                        }
 
-                unit.GetComponent<health>().takeDamage(dmg);
-                routine = StartCoroutine("TakeDamage");
+                        unit.GetComponent<health>().takeDamage(dmg);
+                        routine = StartCoroutine("TakeDamage");
+                    }
+                }
+                else
+                {
+
+                    playerMovement.KBCounter = playerMovement.KBTotalTime;
+                    if (unit.transform.position.x <= transform.position.x)
+                    {
+                        playerMovement.KBfromRight = true;
+                    }
+                    if (unit.transform.position.x > transform.position.x)
+                    {
+                        playerMovement.KBfromRight = false;
+                    }
+
+                    unit.GetComponent<health>().takeDamage(dmg);
+                    routine = StartCoroutine("TakeDamage");
+                }
             }
         }
     }
@@ -43,10 +58,12 @@ public class obstacle : MonoBehaviour
 
 
     IEnumerator TakeDamage()
-    {
+    {   
         animator.SetBool("isHit", true);
         dmg = 0;
+        Physics2D.IgnoreCollision(playerMovement.GetComponent<Collider2D>(), GetComponent<Collider2D>());
         yield return new WaitForSeconds(2f);
+        Physics2D.IgnoreCollision(playerMovement.GetComponent<Collider2D>(), GetComponent<Collider2D>(), false);
         animator.SetBool("isHit", false);
         dmg = 1;
         routine = null;
