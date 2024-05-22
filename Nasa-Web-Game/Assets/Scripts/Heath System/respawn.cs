@@ -42,6 +42,7 @@ public class respawn : MonoBehaviour
             else{
             
                 if (collision.gameObject.GetComponent<checkpointOrder>().checkpointNum > checkOrder.checkpointNum){
+                    collision.gameObject.GetComponent<SpriteRenderer>().sprite = sprite;
                     curCheckpoint = collision.transform;
                 }
             }
