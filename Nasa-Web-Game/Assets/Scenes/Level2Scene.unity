@@ -12993,8 +12993,8 @@ MonoBehaviour:
   totalItems: 4
   collectionSystem: {fileID: 1588085354}
   LevelCompleteScreen: {fileID: 1167324781}
---- !u!70 &1588085362
-CapsuleCollider2D:
+--- !u!61 &1588085362
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -13002,7 +13002,7 @@ CapsuleCollider2D:
   m_GameObject: {fileID: 1588085348}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 5f75d91b1d1451b4a8141fc3646131d9, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -13026,8 +13026,18 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.5}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.04, y: 2.16}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
   m_Size: {x: 2, y: 1}
-  m_Direction: 1
+  m_EdgeRadius: 0
 --- !u!1 &1589440164
 GameObject:
   m_ObjectHideFlags: 0
