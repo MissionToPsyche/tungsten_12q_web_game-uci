@@ -8,10 +8,12 @@ public class obstacle : MonoBehaviour
     public PlayerMovement playerMovement;
     public Animator animator;
     private Coroutine routine;
+
     private void OnTriggerEnter2D(Collider2D unit)
     {
         if (unit.tag == "Player")
         {
+
 
             if (routine == null)
             {
@@ -54,9 +56,6 @@ public class obstacle : MonoBehaviour
             }
         }
     }
-    
-
-
     IEnumerator TakeDamage()
     {   
         animator.SetBool("isHit", true);

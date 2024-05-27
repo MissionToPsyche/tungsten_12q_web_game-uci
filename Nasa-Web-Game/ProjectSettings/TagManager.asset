@@ -16,6 +16,7 @@ TagManager:
   - Obstacles
   - Rolling Rock
   - Moveable Rock
+
   layers:
   - Default
   - TransparentFX
