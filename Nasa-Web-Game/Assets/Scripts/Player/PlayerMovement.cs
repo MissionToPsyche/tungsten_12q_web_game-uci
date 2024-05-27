@@ -78,7 +78,8 @@ public class PlayerMovement : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {   
         //checks to see if sprite is on the tag "Ground"
-        if(collision.gameObject.CompareTag("Ground"))
+        if (collision.gameObject.CompareTag("Ground") || collision.gameObject.CompareTag("Moveable Rock"))
+
         {
             canJump = false;
         }

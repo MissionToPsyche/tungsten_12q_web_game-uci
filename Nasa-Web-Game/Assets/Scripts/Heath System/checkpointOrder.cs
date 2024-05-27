@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class checkpointOrder : MonoBehaviour
 {
+    public Sprite sprite;
     // Start is called before the first frame update
     [SerializeField]public float checkpointNum;
     void Start()
