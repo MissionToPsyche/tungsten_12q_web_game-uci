@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -121,17 +122,6 @@ public class PlayerMovement : MonoBehaviour
         //Movement speed of sprite
         
     }
-<<<<<<< HEAD
-
-    private Collider2D getComponent<T>()
-    {
-        throw new NotImplementedException();
-
-        UpdateSound();
-    }
-=======
- 
->>>>>>> main
     private void OnCollisionEnter2D(Collision2D collision)
     {   
         //checks to see if sprite is on the tag "Ground"

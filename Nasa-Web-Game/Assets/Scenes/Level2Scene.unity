@@ -526,6 +526,7 @@ GameObject:
   - component: {fileID: 18750467}
   - component: {fileID: 18750466}
   - component: {fileID: 18750465}
+  - component: {fileID: 18750469}
   m_Layer: 0
   m_Name: Solar Flare 1 (3)
   m_TagString: Obstacles
@@ -685,6 +686,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &18750469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 18750463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -784921779
+      Data2: 1315149222
+      Data3: 1998489510
+      Data4: 1623929219
+    Path: event:/SFX/stormSFX
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 11.3
 --- !u!1 &20450677
 GameObject:
   m_ObjectHideFlags: 0
@@ -11900,6 +11932,7 @@ GameObject:
   - component: {fileID: 1138014188}
   - component: {fileID: 1138014187}
   - component: {fileID: 1138014186}
+  - component: {fileID: 1138014190}
   m_Layer: 0
   m_Name: Solar Flare 1 (2)
   m_TagString: Obstacles
@@ -12059,6 +12092,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1138014190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1138014184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -784921779
+      Data2: 1315149222
+      Data3: 1998489510
+      Data4: 1623929219
+    Path: event:/SFX/stormSFX
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 11.3
 --- !u!1 &1167324774
 GameObject:
   m_ObjectHideFlags: 0
@@ -14746,6 +14810,7 @@ GameObject:
   - component: {fileID: 1542548032}
   - component: {fileID: 1542548036}
   - component: {fileID: 1542548037}
+  - component: {fileID: 1542548038}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -14930,6 +14995,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1542548038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1542548031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 1588085348}
 --- !u!1 &1548969353
 GameObject:
   m_ObjectHideFlags: 3
