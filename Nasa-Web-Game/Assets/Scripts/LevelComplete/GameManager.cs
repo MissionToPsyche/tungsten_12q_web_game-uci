@@ -20,10 +20,10 @@ public class GameManager : MonoBehaviour
         //If triggers an object with the tag level complete then open Level Complete canvas
         if(trigger.gameObject.CompareTag("Level Complete"))
         {
-            if (collectionSystem.counter == totalItems)
-            {
+            //if (collectionSystem.counter == totalItems)
+            //{
                 LevelComplete();
-            }
+            //}
         }
         
     }
