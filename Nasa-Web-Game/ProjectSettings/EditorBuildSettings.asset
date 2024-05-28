@@ -9,9 +9,12 @@ EditorBuildSettings:
     path: Assets/Scenes/StartMenu.unity
     guid: 40232d6ac063565499389d8a4eaa9c36
   - enabled: 1
-    path: Assets/Scenes/UpdateFloor1.unity
-    guid: f4c045506e301b546a74899e54271d9a
+    path: Assets/Scenes/MainScene.unity
+    guid: f3dd7c51c0378c44389e67471cf6b61d
   - enabled: 1
     path: Assets/Scenes/ParallaxScene.unity
     guid: 71e58a818709a6c48a7f7951e6933dbd
+  - enabled: 0
+    path: Assets/Scenes/UpdateFloor1.unity
+    guid: f4c045506e301b546a74899e54271d9a
   m_configObjects: {}
