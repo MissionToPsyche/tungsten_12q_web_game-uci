@@ -26,7 +26,11 @@ public class PlayerMovement : MonoBehaviour
     {
         horizontal = Input.GetAxisRaw("Horizontal");
         animator.SetFloat("Speed", Mathf.Abs(horizontal));
+        if(Input.GetKey(KeyCode.F1))
+        {
+            gameObject.transform.position = new Vector3(gameObject.transform.position.x+10, gameObject.transform.position.y, 0);
 
+        }
         
         //Gets User input and checks to see if the User can Jump
         if(Input.GetButtonDown("Jump") && !canJump)
