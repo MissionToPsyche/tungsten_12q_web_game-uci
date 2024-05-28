@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using FMODUnity;
@@ -18,7 +19,16 @@ public class FMODevents : MonoBehaviour
     [field: Header("ObjectSFX")] 
 
     [field: SerializeField] public EventReference collectSFX {get; private set;}
+
+    [field: Header("buttonConfirm")]
+    [field: SerializeField] public EventReference confirmSFX {get; private set;}
+
+    [field: Header("buttonBack")]
+    [field: SerializeField] public EventReference backSFX {get; private set;}
+
     public static FMODevents Instance {get; private set;}
+
+    
 
     
     void Awake()
@@ -29,5 +39,6 @@ public class FMODevents : MonoBehaviour
         }
         Instance = this;
     }
+
 
 }

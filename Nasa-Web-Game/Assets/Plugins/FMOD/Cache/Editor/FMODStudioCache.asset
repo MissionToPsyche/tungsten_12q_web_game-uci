@@ -87,7 +87,7 @@ MonoBehaviour:
   Path: Assets/Scripts/Audio/FMODBANKS/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638517829768626660
+  lastModified: 638524619494337131
   FileSizes: []
   Exists: 1
 --- !u!114 &-2731755227091981912
@@ -165,16 +165,18 @@ MonoBehaviour:
   - {fileID: -3662345244942828589}
   EditorEvents:
   - {fileID: -4673202835383483469}
-  - {fileID: 7541841889051305686}
   - {fileID: 1827118637335362138}
   - {fileID: -4975942080597730152}
   - {fileID: 3289839673960769762}
+  - {fileID: 5826047259348388827}
+  - {fileID: 2186003946819340637}
+  - {fileID: 7304712458948068897}
   EditorParameters: []
   MasterBanks:
   - {fileID: 4178330485583338596}
   StringsBanks:
   - {fileID: 5807361195296805890}
-  cacheTime: 638517829768626660
+  cacheTime: 638524619494337131
   cacheVersion: 131616
 --- !u!114 &1827118637335362138
 MonoBehaviour:
@@ -203,6 +205,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &2186003946819340637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/menuConfirm
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/menuConfirm
+  Guid:
+    Data1: -1344460371
+    Data2: 1101431155
+    Data3: 402986131
+    Data4: -1145473284
+  Banks:
+  - {fileID: 4178330485583338596}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 176
 --- !u!114 &2640302834670188555
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -272,7 +301,7 @@ MonoBehaviour:
   Path: Assets/Scripts/Audio/FMODBANKS/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638517808166621605
+  lastModified: 638524619494039519
   FileSizes: []
   Exists: 1
 --- !u!114 &5807361195296805890
@@ -290,11 +319,39 @@ MonoBehaviour:
   Path: Assets/Scripts/Audio/FMODBANKS/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638517808166646407
+  lastModified: 638524619494054416
   FileSizes:
   - Name: 
-    Value: 1068
+    Value: 1238
   Exists: 1
+--- !u!114 &5826047259348388827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/menuBack
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/menuBack
+  Guid:
+    Data1: 1295394818
+    Data2: 1088666367
+    Data3: -524955745
+    Data4: -1485563602
+  Banks:
+  - {fileID: 6032744021046470288}
+  - {fileID: 4178330485583338596}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 174
 --- !u!114 &6032744021046470288
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -310,7 +367,7 @@ MonoBehaviour:
   Path: Assets/Scripts/Audio/FMODBANKS/Desktop/LVL1.bank
   Name: LVL1
   StudioPath: bank:/LVL1
-  lastModified: 638500149345881195
+  lastModified: 638524619493821295
   FileSizes: []
   Exists: 1
 --- !u!114 &6677099218808536527
@@ -340,7 +397,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 232463
---- !u!114 &7541841889051305686
+--- !u!114 &7304712458948068897
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -350,9 +407,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/MoveSound
+  m_Name: event:/SFX/moveSound
   m_EditorClassIdentifier: 
-  Path: event:/SFX/MoveSound
+  Path: event:/SFX/moveSound
   Guid:
     Data1: 777414283
     Data2: 1099673563

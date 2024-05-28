@@ -114,6 +114,7 @@ public class PlayerMovement : MonoBehaviour
             }
             KBCounter -= Time.deltaTime;
         }
+        UpdateSound();
         //Movement speed of sprite
         
     }
