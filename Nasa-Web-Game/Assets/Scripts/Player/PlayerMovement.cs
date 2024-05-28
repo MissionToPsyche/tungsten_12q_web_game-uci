@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -54,7 +53,11 @@ public class PlayerMovement : MonoBehaviour
     {
         horizontal = Input.GetAxisRaw("Horizontal");
         animator.SetFloat("Speed", Mathf.Abs(horizontal));
-        
+        if(Input.GetKey(KeyCode.F1))
+        {
+            gameObject.transform.position = new Vector3(gameObject.transform.position.x+10, gameObject.transform.position.y, 0);
+
+        }
         
         //Gets User input and checks to see if the User can Jump
         if(Input.GetButtonDown("Jump") && !canJump)
@@ -118,6 +121,7 @@ public class PlayerMovement : MonoBehaviour
         //Movement speed of sprite
         
     }
+<<<<<<< HEAD
 
     private Collider2D getComponent<T>()
     {
@@ -125,15 +129,34 @@ public class PlayerMovement : MonoBehaviour
 
         UpdateSound();
     }
+=======
+ 
+>>>>>>> main
     private void OnCollisionEnter2D(Collision2D collision)
-    {
+    {   
         //checks to see if sprite is on the tag "Ground"
-        if (collision.gameObject.CompareTag("Ground"))
+        if (collision.gameObject.CompareTag("Ground") || collision.gameObject.CompareTag("Moveable Rock"))
+
         {
             canJump = false;
         }
+        
     }
-    
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Obstacles"))
+        {
+            StartCoroutine("DamageTaken");
+        }
+        
+      
+    }
+    IEnumerable DamageTaken()
+    {
+        sprite.color = Color.red;
+        yield return new WaitForSeconds(1f);
+        sprite.color = Color.white;
+    }
     void flipping()
     {
         Vector3 scale = gameObject.transform.localScale;

@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using TMPro; // Import TextMeshPro namespace
 
 public class DialogueTrigger1 : MonoBehaviour
@@ -11,9 +10,11 @@ public class DialogueTrigger1 : MonoBehaviour
     public string[] dialogue;
     private int index = 0;
 
-    public GameObject contButton; 
+    public GameObject contButton;
     public float wordSpeed;
     public bool playerIsClose;
+    private Coroutine typingCoroutine; // Store reference to the typing coroutine
+    private bool isTyping = false; // Flag to indicate if typing is in progress
 
     void Start()
     {
@@ -23,39 +24,62 @@ public class DialogueTrigger1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && playerIsClose)
+        if (Input.GetKeyDown(KeyCode.F) && playerIsClose)
         {
-            if (dialoguePanel.activeInHierarchy)
-            {
-                zeroText();
-            }
-            else
+            if (!dialoguePanel.activeInHierarchy)
             {
                 dialoguePanel.SetActive(true);
-                StartCoroutine(Typing());
+                StartTyping();
             }
-        }
-
-        if(dialogueText.text == dialogue[index])
-        {
-            contButton.SetActive(true);
+            else if (isTyping)
+            {
+                CompleteTyping();
+            }
+            else if (dialogueText.text == dialogue[index])
+            {
+                NextLine();
+            }
         }
     }
 
     public void zeroText()
     {
+        if (typingCoroutine != null)
+        {
+            StopCoroutine(typingCoroutine);
+            typingCoroutine = null;
+        }
         dialogueText.text = "";
         index = 0;
         dialoguePanel.SetActive(false);
     }
 
+    private void StartTyping()
+    {
+        if (typingCoroutine != null)
+        {
+            StopCoroutine(typingCoroutine);
+        }
+        typingCoroutine = StartCoroutine(Typing());
+    }
+
+    private void CompleteTyping()
+    {
+        StopCoroutine(typingCoroutine);
+        dialogueText.text = dialogue[index];
+        isTyping = false;
+    }
+
     IEnumerator Typing()
     {
+        isTyping = true;
+        dialogueText.text = ""; // Ensure text is cleared before starting
         foreach (char letter in dialogue[index].ToCharArray())
         {
             dialogueText.text += letter; // Use TextMeshPro's text manipulation methods
             yield return new WaitForSeconds(wordSpeed);
         }
+        isTyping = false;
     }
 
     public void NextLine()
@@ -65,8 +89,7 @@ public class DialogueTrigger1 : MonoBehaviour
         if (index < dialogue.Length - 1)
         {
             index++;
-            dialogueText.text = "";
-            StartCoroutine(Typing());
+            StartTyping();
         }
         else
         {
@@ -74,17 +97,16 @@ public class DialogueTrigger1 : MonoBehaviour
         }
     }
 
-
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
             playerIsClose = true;
             dialoguePanel.SetActive(true);
-            StartCoroutine(Typing());
+            StartTyping();
         }
-
     }
+
     private void OnTriggerExit2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
