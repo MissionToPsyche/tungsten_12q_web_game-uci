@@ -28,7 +28,7 @@ public class PlayerMovement : MonoBehaviour
         animator.SetFloat("Speed", Mathf.Abs(horizontal));
         if(Input.GetKey(KeyCode.F1))
         {
-            gameObject.transform.position = new Vector3(gameObject.transform.position.x+10, gameObject.transform.position.y, 0);
+            gameObject.GetComponent<RectTransform>().position = new Vector3(gameObject.GetComponent<RectTransform>().position.x +10, gameObject.GetComponent<RectTransform>().position.y, 0);
 
         }
         
