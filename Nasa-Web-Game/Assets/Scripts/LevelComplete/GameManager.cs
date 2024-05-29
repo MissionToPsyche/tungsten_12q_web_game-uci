@@ -22,7 +22,7 @@ public class GameManager : MonoBehaviour
         {
             //if (collectionSystem.counter == totalItems)
             //{
-                LevelComplete();
+            LevelComplete();
             //}
         }
         
