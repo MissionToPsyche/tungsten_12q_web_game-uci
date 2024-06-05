@@ -669,11 +669,11 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 0
   windowsGamepadBackendHint: 0
-  cloudProjectId: ca893210-a5e3-41cd-87b8-3d005440de32
+  cloudProjectId: 1d73e84b-0177-40ca-a62a-2fc66104cdce
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: Nasa-Web-Game
-  organizationId: wgip1
+  projectName: Nasa web game
+  organizationId: kalvinkouch
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}
