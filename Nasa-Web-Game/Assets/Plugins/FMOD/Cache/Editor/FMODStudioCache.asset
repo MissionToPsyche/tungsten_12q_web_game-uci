@@ -42,7 +42,7 @@ MonoBehaviour:
   Path: Assets/Scripts/Audio/FMODBANKS/Desktop/Master.strings.bank
   Name: Desktop/Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638531198602789822
+  lastModified: 638535881841210709
   FileSizes:
   - Name: 
     Value: 1238
@@ -62,7 +62,7 @@ MonoBehaviour:
   Path: Assets/Scripts/Audio/FMODBANKS/Desktop/Master.bank
   Name: Desktop/Master
   StudioPath: bank:/Master
-  lastModified: 638531198602765023
+  lastModified: 638535881841209422
   FileSizes: []
   Exists: 1
 --- !u!114 &-2625952806703094918
@@ -80,7 +80,7 @@ MonoBehaviour:
   Path: Assets/Scripts/Audio/FMODBANKS/Desktop/SFX.bank
   Name: Desktop/SFX
   StudioPath: bank:/SFX
-  lastModified: 638531198603221349
+  lastModified: 638535881841218837
   FileSizes: []
   Exists: 1
 --- !u!114 &-2250410625535556402
@@ -194,7 +194,7 @@ MonoBehaviour:
   - {fileID: -6535993843643414030}
   StringsBanks:
   - {fileID: -7505531257500342330}
-  cacheTime: 638531198603221349
+  cacheTime: 638535881841218837
   cacheVersion: 131618
 --- !u!114 &255747926019393689
 MonoBehaviour:
@@ -211,7 +211,7 @@ MonoBehaviour:
   Path: Assets/Scripts/Audio/FMODBANKS/Desktop/LVL1.bank
   Name: Desktop/LVL1
   StudioPath: bank:/LVL1
-  lastModified: 638531198602402947
+  lastModified: 638535881841206552
   FileSizes: []
   Exists: 1
 --- !u!114 &3964745531383122121
