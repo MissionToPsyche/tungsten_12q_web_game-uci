@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FMODUnity;
+using FMOD.Studio;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -22,6 +24,11 @@ public class PlayerMovement : MonoBehaviour
 
     public bool KBfromRight;
 
+    private EventInstance playerMoveSound;
+
+    private void Start(){
+        playerMoveSound = AudioManager.Instance.CreateEventInstance(FMODevents.Instance.moveSound);
+    }
     void Update()
     {
         horizontal = Input.GetAxisRaw("Horizontal");
@@ -41,6 +48,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetButtonDown("Jump") && !canJump)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
+            AudioManager.Instance.PlayOneShot(FMODevents.Instance.jumpSound,this.transform.position);
             canJump = true;
         }
         //checks to see where the user is facing
@@ -60,6 +68,7 @@ public class PlayerMovement : MonoBehaviour
         {
             flipping();
         }
+        UpdateSound();
 
     }
     private void FixedUpdate()
@@ -116,4 +125,17 @@ public class PlayerMovement : MonoBehaviour
         gameObject.transform.localScale = scale;
         facingRight = !facingRight;
     }
+       private void UpdateSound(){
+        if (rb.velocity.x !=0){
+            PLAYBACK_STATE playbackState;
+            playerMoveSound.getPlaybackState(out playbackState);
+            if (playbackState.Equals(PLAYBACK_STATE.STOPPED)){
+                playerMoveSound.start();
+            }
+        }
+        else{
+            playerMoveSound.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        }
+    }
+    
 }
