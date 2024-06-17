@@ -4331,7 +4331,7 @@ MonoBehaviour:
   dialoguePanel: {fileID: 1247128517}
   dialogueText: {fileID: 1124814222}
   dialogue:
-  - "Rover, you\u2019ve landed successfully on Pysche!"
+  - "Rover, you\u2019ve landed successfully on Psyche!"
   - "Well \u2026 if that\u2019s what you call a landing, I guess \u2026 The year
     is 2100! Some of your circuits got fried, so you might be experiencing some amnesia."
   - "Let\u2019s see what\u2019s out there. Try moving around and exploring the asteroid!"
